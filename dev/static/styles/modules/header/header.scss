@@ -1,0 +1,91 @@
+// BEGIN HEADER
+.header {
+  position: relative;
+  background: 50% 50%/cover no-repeat url('../images/header-bg.jpg');
+  height: 100vh;
+  width: 100%;
+
+  // Navigation
+  &__nav {
+    @include push--auto;
+    width: calc(100% - 80px);
+  }
+}
+// END HEADER
+
+// BEGIN NAVIGATION
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+
+  // Begin logo
+  &__logo-link {
+    svg {
+      height: 30px;
+
+      path {
+        transition: .3s ease;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: $green;
+        }
+      }
+    }
+  }
+  // End logo
+
+  // Begin nav
+  li {
+    margin: 0 35px;
+    position: relative;
+
+    &:before {
+      @include pseudo;
+      left: -37.5px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    transition: .3s ease;
+    display: block;
+    padding: 6px 0px;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  ul {
+    display: flex;
+  }
+  // End nav
+}
+// END NAVIGATION
