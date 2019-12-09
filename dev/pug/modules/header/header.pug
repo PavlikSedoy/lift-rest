@@ -1,4 +1,5 @@
-header.header
+header.header#top
+  //- BEGIN NAV BLOCK
   .nav.header__nav
     //- BEGIN LOGO BLOCK
     .nav__logo-wr
@@ -28,6 +29,63 @@ header.header
       //- end navigation
 
       //- begin language switcher
-
+      .nav__lng-swtch.lng-swtch
+        button.lng-swtch__btn.btn.btn__size_100.btn__color_green#lngSwtch(type="button")
+          span#currentLng.lng-swtch__current UK
+          #lngSwtchHidden.lng-swtch__hidden
+            ul
+              li RU
       //- end language switcher
     //- END NAVIGATION AND LANGUAGE SWITCHER
+  //- END NAV BLOCK
+
+  //- BEGIN CONTENT HEADER
+  .header__content-wr
+    .header__scroll-nav.scroll-nav
+      a.scroll-nav__link(href="#top")
+        include ../../../static/images/arrow-top.svg
+      span.scroll-nav__line
+      .scroll-nav__icon
+        img(src="./static/images/scroll-logo.png", alt="")
+        span.scroll-nav__next 2
+      span.scroll-nav__line
+      a.scroll-nav__link(href="#top")
+        include ../../../static/images/arrow-bottom.svg
+
+    //- Begin header content
+    .header__content
+      .row.header__working-time-wr
+        ul.working-time.header__working-time
+          li Пн-Пт: 9:00 - 22:00
+          li Сб-Нд: 10:00 - 23:00
+      .row.header__big-logo
+        .container.header__big-logo_container
+          include ../../../static/images/logo.svg
+        .header__abc
+          include ../../../static/images/abc.svg
+      .row.header__btn-row
+        .header__btn-wr
+          a.btn.btn__color_green.btn__size_100.header__btn(href="/")    
+            span забронювати столик
+      .row.header__social-row
+        .header__social-wr
+          ul
+            li
+              a(href="/")
+                include ../../../static/images/instagram.svg
+                span instagram
+            li
+              a(href="/")
+                include ../../../static/images/facebook.svg
+                span facebook
+    //- End header content
+
+    //- Begin header scroll down
+    .header__scroll-down.scroll-down
+      a.scroll-down__link(href="#second")
+        .scroll-down__icon
+          include ../../../static/images/scroll-down.svg
+        .scroll-down__line
+          span
+    //- End header scroll down
+  //- END CONTENT HEADER

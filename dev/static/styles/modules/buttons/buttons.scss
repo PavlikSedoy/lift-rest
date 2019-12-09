@@ -1,0 +1,44 @@
+// BEGIN BUTTON
+.btn {
+  text-transform: uppercase;
+  transition: .3s ease;
+  display: block;
+
+  span {
+    transition: .3s ease;
+  }
+
+  // Begin sizing
+  &__size {
+    &_100 {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  // End sizing
+
+  // Begin colors
+  &__color {
+    &_green {
+      background-color: $green;
+      color: $white;
+      border: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 2px;
+
+      &:hover {
+        box-shadow: inset 0px 6px 5px -2px rgba(0,0,0,0.49);
+        cursor: pointer;
+
+        span {
+          transform: translateY(3px);
+        }
+      }
+    }
+  }
+  // End colors
+}
+// END BUTTON

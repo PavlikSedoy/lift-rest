@@ -5,10 +5,43 @@
   height: 100vh;
   width: 100%;
 
-  // Navigation
+  &:after {
+    @include pseudo;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    background-image: url('../images/header-bottom-bg.png');
+  }
+
+  // Begin navigation
   &__nav {
-    @include push--auto;
     width: calc(100% - 80px);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: z("nav");
+  }
+  // End navigation
+
+  &__scroll-down {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 22vh;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    z-index: "scroll-down";
+  }
+
+  &__scroll-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 85px;
   }
 }
 // END HEADER
@@ -19,7 +52,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 32px 0;
-
   // Begin logo
   &__logo-link {
     svg {
@@ -39,6 +71,13 @@
     }
   }
   // End logo
+
+  // Begin controls wrapper
+  &__controls-wr {
+    display: flex;
+    align-items: center;
+  }
+  // End controls wrapper
 
   // Begin nav
   li {
@@ -86,6 +125,220 @@
   ul {
     display: flex;
   }
+
+  &__nav {
+    margin-right: 15px;
+  }
   // End nav
+
+  // Begin language switcher
+  &__lng-swtch {
+    margin-left: 15px;
+  }
+  // End language switcher
 }
 // END NAVIGATION
+
+// BEGIN LANGUAGE SWITCHER
+.lng-swtch {
+  position: relative;
+  height: 45px;
+  width: 90px;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__hidden {
+    display: none;
+  }
+}
+// END LANGUAGE SWITCHER
+
+// BEGIN HEADER
+.header {
+  // BEGIN HEADER CONTENT
+  &__content-wr {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__scroll-nav {
+    position: absolute;
+  }
+
+  &__content {
+    color: $white;
+    flex-basis: 100%;
+    z-index: z('content');
+  }
+
+  &__working-time-wr {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &__working-time {
+    font-weight: 500;
+    color: $white;
+    margin-right: 95px;
+  }
+
+  &__big-logo {
+    margin-top: 10.83vh;
+    display: flex;
+    justify-content: center;
+
+    &_container {
+      display: flex;
+      justify-content: center;
+
+      & > svg {
+        height: 13vh;
+        width: 920px;
+      }
+    }
+  }
+
+  &__abc {
+    position: absolute;
+    right: 95px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  // Begin request button
+  &__btn-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+  }
+
+  &__btn-wr {
+    width: 325px;
+    height: 65px;
+  }
+
+  &__btn {
+    font-size: 12px;
+  }
+  // End request button
+
+  &__social-row {
+    margin-top: 14.58vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__social-wr {
+    ul {
+      display: flex;
+      margin-right: 95px;
+    }
+
+    svg {
+      height: 15px;
+      margin-right: 12px;
+    }
+
+    li {
+      margin-left: 70px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      font-size: 17px;
+      color: $white;
+      transition: .3s ease;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  // END HEADER CONTENT
+}
+// END HEADER
+
+// BEGIN SCROLL DOWN LINK
+.scroll-down {
+  overflow: hidden;
+
+  svg {
+    height: 55px;
+
+    path {
+      transition: .3s ease;
+    }
+  }
+
+  &__line {
+    @include push--auto;
+    margin-top: 25px;
+    height: 100%;
+    width: 1px;
+    background-color: $white;
+    transition: .3s ease;
+  }
+
+  &__link:hover {
+    .scroll-down__line {
+      background-color: $green;
+    }
+
+    svg path {
+      fill: $green;
+    }
+  }
+}
+// END SCROLL DOWN LINK
+
+// BEGIN SCROLL NAVIGATION
+.scroll-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: z('scroll-nav');
+
+  &__link {
+    &:first-child {
+      margin-bottom: 3.3vh;
+    }
+
+    &:last-child {
+      margin-top: 3.3vh;
+    }
+  }
+
+  &__icon {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__line {
+    height: 12.5vh;
+    width: 1px;
+    background-color: $green;
+    display: block;
+  }
+
+  &__next {
+    position: absolute;
+    right: -15px;
+    color: $white;
+    font-size: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+// END SCROLL NAVIGATION

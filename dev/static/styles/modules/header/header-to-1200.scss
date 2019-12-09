@@ -1,0 +1,33 @@
+// BEGIN CONTROLS
+.nav {
+  // Begin navigation
+  &__nav {
+    margin-right: 5px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  li {
+    margin: 0 10px;
+
+    &:before {
+      left: -11.5px;
+    }
+  }
+  // End navigation
+
+  // Begin language switcher
+  &__lng-swtch {
+    margin-left: 5px;
+  }
+  // End language switcher
+}
+// END CONTROLS
+
+// BEGIN LANGUAGE SWITCHER
+.lng-swtch {
+  width: 60px;
+}
+// END LANGUAGE SWITCHER

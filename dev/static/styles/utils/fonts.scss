@@ -1,3 +1,4 @@
 @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Regular/Montserrat-Regular', $weight: 400, $style: normal, $asset-pipeline: false );
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Medium/Montserrat-Medium', $weight: 500, $style: normal, $asset-pipeline: false );
 @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-SemiBold/Montserrat-SemiBold', $weight: 600, $style: normal, $asset-pipeline: false );
 @include font-face('Lobster', '../fonts/Lobster/Lobster-Regular/Lobster-Regular', $weight: 400, $style: normal, $asset-pipeline: false );
