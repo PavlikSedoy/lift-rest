@@ -1,0 +1,35 @@
+section.home-gallery
+  .container
+    .section-heading
+      h2.white-text Галерея
+    //- BEGIN TABS
+    .home-gallery__tabs.gallery-tabs
+      .gallery-tabs__item.active
+        a.gallery-tabs__link(href="#interior" data-tab="interior").gallery-tabs__item-link Інтерєр
+      .gallery-tabs__item
+        a.gallery-tabs__link(href="#dishes" data-tab="dishes").gallery-tabs__item-link Страви
+      .gallery-tabs__item
+        a.gallery-tabs__link(href="#greatHall" data-tab="greatHall").gallery-tabs__item-link Великий зал
+      .gallery-tabs__item
+        a.gallery-tabs__link(href="#visitors" data-tab="visitors").gallery-tabs__item-link наші Відвідувачі
+      .gallery-tabs__item
+        a.gallery-tabs__link(href="#events" data-tab="events").gallery-tabs__item-link заходи
+      .gallery-tabs__item
+        a.gallery-tabs__link(href="#instagram" data-tab="instagram").gallery-tabs__item-link instagram
+    //- END TABS
+
+    //- BEGIN TABS CONTENT
+    .home-gallery__tabs-content.tabs-content
+      .tabs-content__item#interior
+        | interior
+      .tabs-content__item#dishes
+        | dishes
+      .tabs-content__item#greatHall
+        | greatHall
+      .tabs-content__item#visitors
+        | visitors
+      .tabs-content__item#events
+        | events
+      .tabs-content__item#instagram
+        | instagram
+    //- END TABS CONTENT

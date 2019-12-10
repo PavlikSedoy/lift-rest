@@ -1,0 +1,78 @@
+.home-gallery {
+  &__tabs {
+    margin-top: 44px;
+  }
+
+  &__tabs-content {
+    margin-top: 10px;
+  }
+}
+
+// BEGIN TABS
+.gallery-tabs {
+  position: relative;
+  border-top: 1px solid $green;
+  display: flex;
+
+  &__item {
+    flex-basis: calc( 100% / 6 );
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+
+    &:before {
+      @include pseudo;
+      top: -4.5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 9px;
+      height: 9px;
+      background-color: $green;
+      border-radius: 50%;
+      box-shadow: 0px 0px 12px $green;
+      opacity: 0;
+      transition: .3s ease;
+    }
+
+    a {
+      color: $green;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      transition: .3s ease;
+    }
+
+    // Begin active tab
+    &.active {
+      &:before {
+        opacity: 1;
+      }
+
+      a {
+        text-shadow: 0px 0px 12px $green;
+      }
+    }
+    // End active tab
+
+    &:hover {
+      a {
+        text-shadow: 0px 0px 12px $green;
+      }
+    }
+  }
+}
+// END TABS
+
+// BEGIN TABS CONTENT
+.tabs-content {
+  color: $white;
+
+  &__item {
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
+}
+// END TABS CONTENT
