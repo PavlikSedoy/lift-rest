@@ -345,4 +345,58 @@ $(document).ready(function () {
         },
     });
     // END HOME GALLERY SLIDER
+
+    // BEGIN HOME REVIEWS SLIDER
+    var reviewsThumb = new Swiper('.home-reviews__thumbs', {
+        // spaceBetween: 30,
+        // slidesPerView: 3,
+        // loop: true,
+        // freeMode: true,
+        // loopedSlides: 5, //looped slides should be the same
+        // navigation: {
+        //     nextEl: '.swiper-button-next1',
+        //     prevEl: '.swiper-button-prev1',
+        // },
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        // centeredSlides: true,
+        // direction: 'vertical',
+        // breakpoints: {
+        //     320: {
+        //       slidesPerView: 3,
+        //       spaceBetween: 5,
+        //     },
+        //     768: {
+        //         slidesPerView: 6,
+        //         spaceBetween: 15,
+        //     }
+        // }
+    });
+    var galleryReview = new Swiper('.home-reviews__reviews', {
+        spaceBetween: 60,
+        // loop:true,
+        // loopedSlides: 5, //looped slides should be the same
+        slidesPerView: 2,
+        // centeredSlides: true,
+        // slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next1',
+            prevEl: '.swiper-button-prev1',
+        },
+        // thumbs: {
+        //     swiper: reviewsThumb,
+        // },
+        on: {
+            slideNextTransitionStart: function() {
+                reviewsThumb.slideNext();
+            },
+            slidePrevTransitionStart: function() {
+                reviewsThumb.slidePrev();
+            },
+        }
+    });
+    // END HOME REVIEWS SLIDER
 });

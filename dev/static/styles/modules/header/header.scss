@@ -272,6 +272,12 @@
 .scroll-down {
   overflow: hidden;
 
+  &.top {
+    .scroll-down__icon svg {
+      transform: rotate(180deg);
+    }
+  }
+
   svg {
     height: 55px;
 

@@ -1,0 +1,94 @@
+section.home-reviews
+  .scroll-nav.scroll-nav__section
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-top.svg
+    span.scroll-nav__line
+    .scroll-nav__icon
+      include ../../static/images/scroll-logo.svg
+      span.scroll-nav__prev 5
+      span.scroll-nav__current 6
+      span.scroll-nav__next 7
+    span.scroll-nav__line
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-bottom.svg
+
+  .container
+    .section-heading.home-reviews__heading
+      h2.white-text Відгуки
+
+    .home-reviews__pagination-slider
+      .swiper-container.home-reviews__thumbs
+        .swiper-wrapper
+          .swiper-slide
+            .home-reviews__thumbs-number 1
+          .swiper-slide
+            .home-reviews__thumbs-number 2
+          .swiper-slide
+            .home-reviews__thumbs-number 3
+          .swiper-slide
+            .home-reviews__thumbs-number 4
+          .swiper-slide
+            .home-reviews__thumbs-number 5
+    .home-reviews__reviews-slider
+      .swiper-container.home-reviews__reviews
+        .swiper-wrapper
+          article.swiper-slide
+            .home-reviews__card.card
+              h3.card__title Євгенія, 25
+              .home-reviews__card-text.card__text
+                p У вас дуже смачно готують. Дуже задоволена, обов’язково завітаю до вас с друзями!
+              .home-reviews__card-stars
+                include ../../static/images/stars.svg
+            .home-reviews__img-wr
+              img(src="./static/images/reviews/item-1.jpg", alt="ALT")
+          article.swiper-slide
+            .home-reviews__card.card
+              h3.card__title Надія, 34
+              .home-reviews__card-text.card__text
+                p У вас дуже смачно готують. Дуже задоволена, обов’язково завітаю до вас с друзями!
+              .home-reviews__card-stars
+                include ../../static/images/stars.svg
+            .home-reviews__img-wr
+              img(src="./static/images/reviews/item-2.jpg", alt="ALT")
+          article.swiper-slide
+            .home-reviews__card.card
+              h3.card__title Остап, 28
+              .home-reviews__card-text.card__text
+                p У вас дуже смачно готують. Дуже задоволена, обов’язково завітаю до вас с друзями!
+              .home-reviews__card-stars
+                include ../../static/images/stars.svg
+            .home-reviews__img-wr
+              img(src="./static/images/reviews/item-1.jpg", alt="ALT")
+          article.swiper-slide
+            .home-reviews__card.card
+              h3.card__title Євгенія, 25
+              .home-reviews__card-text.card__text
+                p У вас дуже смачно готують. Дуже задоволена, обов’язково завітаю до вас с друзями!
+              .home-reviews__card-stars
+                include ../../static/images/stars.svg
+            .home-reviews__img-wr
+              img(src="./static/images/reviews/item-2.jpg", alt="ALT")
+          article.swiper-slide
+            .home-reviews__card.card
+              h3.card__title Євгенія, 25
+              .home-reviews__card-text.card__text
+                p У вас дуже смачно готують. Дуже задоволена, обов’язково завітаю до вас с друзями!
+              .home-reviews__card-stars
+                include ../../static/images/stars.svg
+            .home-reviews__img-wr
+              img(src="./static/images/reviews/item-1.jpg", alt="ALT")
+        .home-reviews__controls
+          .swiper-button-prev1
+            include ../../static/images/arrow-left.svg
+          .swiper-button-next1
+            include ../../static/images/arrow-right.svg
+    
+  //- Begin header scroll top
+  .home-reviews__scroll-down.scroll-down.top
+    a.scroll-down__link(href="#top")
+      .scroll-down__icon
+        include ../../static/images/scroll-down.svg
+      .scroll-down__line
+        span
+  //- End header scroll top
+        

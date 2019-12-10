@@ -1,0 +1,131 @@
+.home-reviews {
+  overflow: hidden;
+  padding-bottom: 255px;
+  
+  &:before {
+    @include pseudo;
+    top: 190px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $light-black;
+  }
+
+  &__pagination-slider {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    .swiper-slide {
+      width: 46px;
+      height: 46px;
+      overflow: visible;
+      display: flex;
+      justify-content: center;
+
+      &-active {
+        width: 110px;
+
+        .home-reviews__thumbs-number {
+          border-color: $green;
+          color: $green;
+          box-shadow: 0px 2px 8px $green;
+        }
+      }
+    }
+  }
+
+  &__thumbs {
+    width: 100px;
+    height: 52px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+  }
+
+  &__thumbs-number {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: .3s ease;
+    color: $white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__reviews-slider {
+    margin-top: 0;
+    padding-top: 60px;
+
+    article {
+      background: $white;
+      display: flex;
+      height: 385px;
+    }
+
+    .swiper-container {
+      overflow: visible;
+    }
+  }
+
+  &__card {
+    flex-basis: 60%;
+    padding: 110px 20px 80px;
+  }
+
+  &__img-wr {
+    flex-basis: 40%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__card-text {
+    margin-top: 42px;
+  }
+
+  &__card-stars {
+    margin-top: 45px;
+  }
+
+  &__controls {
+    position: absolute;
+    left: calc(50% + 30px);
+    top: -79px;
+    justify-content: space-between;
+    width: 110px;
+    transform: translateX(-50%);
+    display: flex;
+    
+    svg path {
+      fill: $green;
+      opacity: 1;
+    }
+  }
+
+  &__pagination {
+    bottom: auto;
+    top: -72px;
+    position: absolute;
+  }
+
+  &__scroll-down {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .scroll-down__line {
+      height: 45px;
+    }
+  }
+}
