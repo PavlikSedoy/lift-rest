@@ -1,0 +1,46 @@
+section.home-news
+  .home-news__bg
+
+  .scroll-nav.scroll-nav__section
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-top.svg
+    span.scroll-nav__line
+    .scroll-nav__icon
+      include ../../static/images/scroll-logo.svg
+      span.scroll-nav__prev 3
+      span.scroll-nav__current 4
+      span.scroll-nav__next 5
+    span.scroll-nav__line
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-bottom.svg
+
+  .container
+    .section-heading
+      h2.white-text Новини
+    
+    //- BEGIN CONTENT
+    .home-news__content.white-bg
+      //- Begin item
+      article.home-news__item
+        .home-news__card.card
+          h3.card__title Ми відкрились!
+          .home-news__card-text.card__text
+            p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.
+          .card__btn-wr.home-news__card-btn-wr
+            a.btn.btn__border_animation.btn__color_transparent.btn__text_green(href="/") детальніше <span class="btn-top-border"></span>
+        .home-news__img-wr
+          img(src="./static/images/home-news/item-1.jpg", alt="ALT")
+      //- End item
+
+      //- Begin item
+      article.home-news__item
+        .home-news__img-wr
+          img(src="./static/images/home-news/item-2.jpg", alt="ALT")
+        .home-news__card.card
+          h3.card__title Овочевий сезон
+          .home-news__card-text.card__text
+            p Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it.
+          .card__btn-wr.home-news__card-btn-wr
+            a.btn.btn__border_animation.btn__color_transparent.btn__text_green(href="/") детальніше <span class="btn-top-border"></span>
+      //- End item
+    //- END CONTENT

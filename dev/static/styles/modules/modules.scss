@@ -10,6 +10,8 @@
 @import "scroll-nav/scroll-nav.scss";
 @import "home-menu/home-menu.scss";
 @import "card/card.scss";
+@import "lift-rest/lift-rest.scss";
+@import "home-news/home-news.scss";
 
 // BEGIN MEDIA
 // Media
@@ -19,6 +21,7 @@
   @import "about/about-to-1200.scss";
   @import "scroll-nav/scroll-nav-to-1200.scss";
   @import "home-menu/home-menu-to-1200.scss";
+  @import "home-news/home-new-to-1200.scss";
 }
 
 // END MEDIA
