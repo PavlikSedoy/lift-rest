@@ -13,6 +13,13 @@ body { height: 100%; }
 
 h1, h2, h3, h4, h5, h6 { margin: 0; font-family: 'Lobster'; }
 
+.section-heading {
+  h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+}
+
 ul, li {
   list-style-type: none;
   margin: 0;
@@ -40,6 +47,26 @@ select,
 button { outline: none; }
 
 *, *:before, *:after { box-sizing: border-box; }
+
+main {
+  background: $gray-bg;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+// BEGIN TEXT COLORS
+.green-text {
+  color: $green;
+}
+
+.white-text {
+  color: $white;
+}
+// END TEXT COLORS
 
 //Модули
 @import "modules/modules";

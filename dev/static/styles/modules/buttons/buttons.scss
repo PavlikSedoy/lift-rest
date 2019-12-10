@@ -17,6 +17,73 @@
   }
   // End sizing
 
+  // Begin types
+  &__border {
+    &_animation {
+      font-size: 12px;
+      padding: 15px;
+      position: relative;
+      color: $white;
+
+      .btn-top-border {
+        position: relative;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        &:before {
+          @include pseudo;
+          left: 0;
+          top: 0;
+          width: 0%;
+          height: 1px;
+          border-top: 1px solid $white;
+          transition: .2s ease;
+        }
+
+        &:after {
+          @include pseudo;
+          right: 0;
+          top: 0;
+          width: 0%;
+          height: 1px;
+          border-top: 1px solid $white;
+          transition: .2s ease;
+        }
+      }
+
+      &:before {
+        @include pseudo;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        height: 1px;
+        border: 1px solid $white;
+        border-top: none;
+        width: 38px;
+        transition: width .2s ease .4s, height .2s ease .2s;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+          height: 100%;
+          transition: width .2s ease, height .2s ease .2s;
+        }
+
+        .btn-top-border {
+          &:before, &:after {
+            width: 50%;
+            transition: .2s ease .4s;
+          }
+        }
+      }
+    }
+  }
+  // End types
+
   // Begin colors
   &__color {
     &_green {
@@ -38,7 +105,29 @@
         }
       }
     }
+
+    &_transparent {
+      background-color: transparent;
+    }
   }
   // End colors
+
+  // Begin text colors
+  &__text {
+    &_green {
+      color: $green;
+
+      &:before {
+        border-color: $green;
+      }
+
+      .btn-top-border {
+        &:before, &:after {
+          border-color: $green;
+        }
+      }
+    }
+  }
+  // End text colors
 }
 // END BUTTON

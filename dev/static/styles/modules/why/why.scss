@@ -1,0 +1,41 @@
+.why {
+  padding-bottom: 115px;
+
+  &__heading {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+  }
+
+  &__item {
+    flex-basis: calc((100% -330px) / 4);
+    text-align: center;
+
+    svg {
+      height: 47px;
+
+      path {
+        transition: .3s ease;
+      }
+    }
+
+    &:hover {
+      svg path {
+        fill: $green;
+      }
+    }
+  }
+
+  &__item-title {
+    margin-top: 30px;
+    color: rgba($gray, .55);
+    font-family: $base-font;
+    line-height: 18px;
+    font-size: 15px;
+  }
+}

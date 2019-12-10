@@ -323,6 +323,12 @@
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: 3.3vh;
+    margin-bottom: 3.3vh;
+
+    svg {
+      height: 55px;
+    }
   }
 
   &__line {

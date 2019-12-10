@@ -5,12 +5,15 @@
 @import "small-blocks/small-blocks";
 @import "container/container";
 @import "page-options/page-options.scss";
+@import "why/why.scss";
+@import "about/about.scss";
 
 // BEGIN MEDIA
 // Media
 @media screen and (max-width: 1530px) {
   @import "container/media/container-to-1200.scss";
   @import "header/header-to-1200.scss";
+  @import "about/about-to-1200.scss";
 }
 
 // END MEDIA
