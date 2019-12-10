@@ -286,6 +286,20 @@
           </div>
         </section>
         <section class="home-gallery">
+          <div class="home-gallery__bg"></div>
+          <div class="scroll-nav scroll-nav__section"><a class="scroll-nav__link" href="#top"><svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.7326 9.45621L9.27633 0L0 9.27633L2.54388 11.8201L9.27633 5.08758L16.1887 12L18.7326 9.45621Z" fill="#83BE42"/>
+</svg>
+</a><span class="scroll-nav__line"></span>
+            <div class="scroll-nav__icon"><svg width="70" height="57" viewBox="0 0 70 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.3209 42.3111H49.6538V3.78518H20.3209V42.3111ZM53.4408 42.3111V2.97292C53.4408 1.33405 52.1067 0 50.466 0H19.5104C17.8716 0 16.5357 1.33405 16.5357 2.97292V42.3111H1.62273C0.726195 42.3111 0 43.0373 0 43.9321C0 44.8286 0.726195 45.5548 1.62273 45.5548H68.3555C69.2503 45.5548 69.9765 44.8286 69.9765 43.9321C69.9765 43.0373 69.2503 42.3111 68.3555 42.3111H53.4408ZM23.2508 53.7563C22.3542 53.7563 21.628 54.4807 21.628 55.3773C21.628 56.272 22.3542 57 23.2508 57H46.9516C47.8482 57 48.5743 56.272 48.5743 55.3773C48.5743 54.4807 47.8482 53.7563 46.9516 53.7563H23.2508ZM11.1744 49.6556C11.1744 48.759 11.9006 48.0328 12.7954 48.0328H57.4967C58.3914 48.0328 59.1176 48.759 59.1176 49.6556C59.1176 50.5521 58.3914 51.2783 57.4967 51.2783H12.7954C11.9006 51.2783 11.1744 50.5521 11.1744 49.6556Z" fill="#83BE42"/>
+</svg>
+<span class="scroll-nav__prev">4</span><span class="scroll-nav__current">5</span><span class="scroll-nav__next">6</span>
+            </div><span class="scroll-nav__line"></span><a class="scroll-nav__link" href="#top"><svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.6427 2.54379L16.0988 0L9.1864 6.91242L2.54388 0.269812L0 2.8136L9.18649 12L18.6427 2.54379Z" fill="#83BE42"/>
+</svg>
+</a>
+          </div>
           <div class="container">
             <div class="section-heading">
               <h2 class="white-text">Галерея</h2>
@@ -299,12 +313,218 @@
               <div class="gallery-tabs__item"><a class="gallery-tabs__link gallery-tabs__item-link" href="#instagram" data-tab="instagram">instagram</a></div>
             </div>
             <div class="home-gallery__tabs-content tabs-content">
-              <div class="tabs-content__item" id="interior">interior</div>
-              <div class="tabs-content__item" id="dishes">dishes</div>
-              <div class="tabs-content__item" id="greatHall">greatHall</div>
-              <div class="tabs-content__item" id="visitors">visitors</div>
-              <div class="tabs-content__item" id="events">events</div>
-              <div class="tabs-content__item" id="instagram">instagram</div>
+              <div class="tabs-content__item" id="interior">
+                <div class="tabs-content__item-in">
+                  <div class="tabs-content__big-slider">
+                    <div class="swiper-container gallery-top gallery-top-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                      </div>
+                      <div class="tabs-content__slider-controls">
+                        <div class="swiper-button-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.35" d="M9.95621 19.5L0.5 9.90873L9.77633 0.5L12.3201 3.08019L5.58758 9.90873L12.5 16.9197L9.95621 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-button-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.04379 19.5L12.5 9.90873L3.22367 0.5L0.679875 3.08019L7.41242 9.90873L0.5 16.9197L3.04379 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content__thumbs-slider">
+                    <div class="swiper-container gallery-thumbs gallery-thumbs-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                        <div class="swiper-slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content__item" id="dishes">
+                <div class="tabs-content__item-in">
+                  <div class="tabs-content__big-slider">
+                    <div class="swiper-container gallery-top-2 gallery-top-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                      </div>
+                      <div class="tabs-content__slider-controls">
+                        <div class="swiper-button-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.35" d="M9.95621 19.5L0.5 9.90873L9.77633 0.5L12.3201 3.08019L5.58758 9.90873L12.5 16.9197L9.95621 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-button-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.04379 19.5L12.5 9.90873L3.22367 0.5L0.679875 3.08019L7.41242 9.90873L0.5 16.9197L3.04379 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content__thumbs-slider">
+                    <div class="swiper-container gallery-thumbs-2 gallery-thumbs-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                        <div class="swiper-slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content__item" id="greatHall">
+                <div class="tabs-content__item-in">
+                  <div class="tabs-content__big-slider">
+                    <div class="swiper-container gallery-top-3 gallery-top-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                      </div>
+                      <div class="tabs-content__slider-controls">
+                        <div class="swiper-button-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.35" d="M9.95621 19.5L0.5 9.90873L9.77633 0.5L12.3201 3.08019L5.58758 9.90873L12.5 16.9197L9.95621 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-button-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.04379 19.5L12.5 9.90873L3.22367 0.5L0.679875 3.08019L7.41242 9.90873L0.5 16.9197L3.04379 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content__thumbs-slider">
+                    <div class="swiper-container gallery-thumbs-3 gallery-thumbs-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                        <div class="swiper-slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content__item" id="visitors">
+                <div class="tabs-content__item-in">
+                  <div class="tabs-content__big-slider">
+                    <div class="swiper-container gallery-top-4 gallery-top-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                      </div>
+                      <div class="tabs-content__slider-controls">
+                        <div class="swiper-button-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.35" d="M9.95621 19.5L0.5 9.90873L9.77633 0.5L12.3201 3.08019L5.58758 9.90873L12.5 16.9197L9.95621 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-button-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.04379 19.5L12.5 9.90873L3.22367 0.5L0.679875 3.08019L7.41242 9.90873L0.5 16.9197L3.04379 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content__thumbs-slider">
+                    <div class="swiper-container gallery-thumbs-4 gallery-thumbs-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                        <div class="swiper-slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content__item" id="events">
+                <div class="tabs-content__item-in">
+                  <div class="tabs-content__big-slider">
+                    <div class="swiper-container gallery-top-5 gallery-top-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                      </div>
+                      <div class="tabs-content__slider-controls">
+                        <div class="swiper-button-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.35" d="M9.95621 19.5L0.5 9.90873L9.77633 0.5L12.3201 3.08019L5.58758 9.90873L12.5 16.9197L9.95621 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-button-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.04379 19.5L12.5 9.90873L3.22367 0.5L0.679875 3.08019L7.41242 9.90873L0.5 16.9197L3.04379 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content__thumbs-slider">
+                    <div class="swiper-container gallery-thumbs-5 gallery-thumbs-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                        <div class="swiper-slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content__item" id="instagram">
+                <div class="tabs-content__item-in">
+                  <div class="tabs-content__big-slider">
+                    <div class="swiper-container gallery-top-6 gallery-top-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-2.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                      </div>
+                      <div class="tabs-content__slider-controls">
+                        <div class="swiper-button-prev"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.35" d="M9.95621 19.5L0.5 9.90873L9.77633 0.5L12.3201 3.08019L5.58758 9.90873L12.5 16.9197L9.95621 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="tabs-content__slider-line"></div>
+                        <div class="swiper-button-next"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.04379 19.5L12.5 9.90873L3.22367 0.5L0.679875 3.08019L7.41242 9.90873L0.5 16.9197L3.04379 19.5Z" fill="white"/>
+</svg>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content__thumbs-slider">
+                    <div class="swiper-container gallery-thumbs-6 gallery-thumbs-each">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./static/images/home-gallery/slide-3.jpg)"></div>
+                        <div class="swiper-slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

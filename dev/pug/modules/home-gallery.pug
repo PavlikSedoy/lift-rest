@@ -1,4 +1,19 @@
 section.home-gallery
+  .home-gallery__bg
+
+  .scroll-nav.scroll-nav__section
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-top.svg
+    span.scroll-nav__line
+    .scroll-nav__icon
+      include ../../static/images/scroll-logo.svg
+      span.scroll-nav__prev 4
+      span.scroll-nav__current 5
+      span.scroll-nav__next 6
+    span.scroll-nav__line
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-bottom.svg
+
   .container
     .section-heading
       h2.white-text Галерея
@@ -20,16 +35,158 @@ section.home-gallery
 
     //- BEGIN TABS CONTENT
     .home-gallery__tabs-content.tabs-content
+      //- Begin tab content
       .tabs-content__item#interior
-        | interior
+        .tabs-content__item-in
+          //- Begin big slider
+          .tabs-content__big-slider
+            .swiper-container.gallery-top.gallery-top-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-1.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-2.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+              .tabs-content__slider-controls
+                .swiper-button-prev
+                  include ../../static/images/arrow-left.svg
+                .tabs-content__slider-line
+                .swiper-pagination
+                .tabs-content__slider-line
+                .swiper-button-next
+                  include ../../static/images/arrow-right.svg
+          //- End big slider
+
+          //- Begin thumbs slider
+          .tabs-content__thumbs-slider
+            .swiper-container.gallery-thumbs.gallery-thumbs-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-2.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+                .swiper-slide
+          //- End thumbs slider
+      //- End tab content
       .tabs-content__item#dishes
-        | dishes
+        .tabs-content__item-in
+          //- Begin big slider
+          .tabs-content__big-slider
+            .swiper-container.gallery-top-2.gallery-top-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-2.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+              .tabs-content__slider-controls
+                .swiper-button-prev
+                  include ../../static/images/arrow-left.svg
+                .tabs-content__slider-line
+                .swiper-pagination
+                .tabs-content__slider-line
+                .swiper-button-next
+                  include ../../static/images/arrow-right.svg
+          //- End big slider
+
+          //- Begin thumbs slider
+          .tabs-content__thumbs-slider
+            .swiper-container.gallery-thumbs-2.gallery-thumbs-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+                .swiper-slide
+          //- End thumbs slider
       .tabs-content__item#greatHall
-        | greatHall
+        .tabs-content__item-in
+          //- Begin big slider
+          .tabs-content__big-slider
+            .swiper-container.gallery-top-3.gallery-top-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-2.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+              .tabs-content__slider-controls
+                .swiper-button-prev
+                  include ../../static/images/arrow-left.svg
+                .tabs-content__slider-line
+                .swiper-pagination
+                .tabs-content__slider-line
+                .swiper-button-next
+                  include ../../static/images/arrow-right.svg
+          //- End big slider
+
+          //- Begin thumbs slider
+          .tabs-content__thumbs-slider
+            .swiper-container.gallery-thumbs-3.gallery-thumbs-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+                .swiper-slide
+          //- End thumbs slider
       .tabs-content__item#visitors
-        | visitors
+        .tabs-content__item-in
+          //- Begin big slider
+          .tabs-content__big-slider
+            .swiper-container.gallery-top-4.gallery-top-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-2.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+              .tabs-content__slider-controls
+                .swiper-button-prev
+                  include ../../static/images/arrow-left.svg
+                .tabs-content__slider-line
+                .swiper-pagination
+                .tabs-content__slider-line
+                .swiper-button-next
+                  include ../../static/images/arrow-right.svg
+          //- End big slider
+
+          //- Begin thumbs slider
+          .tabs-content__thumbs-slider
+            .swiper-container.gallery-thumbs-4.gallery-thumbs-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+                .swiper-slide
+          //- End thumbs slider
       .tabs-content__item#events
-        | events
+        .tabs-content__item-in
+          //- Begin big slider
+          .tabs-content__big-slider
+            .swiper-container.gallery-top-5.gallery-top-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-2.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+              .tabs-content__slider-controls
+                .swiper-button-prev
+                  include ../../static/images/arrow-left.svg
+                .tabs-content__slider-line
+                .swiper-pagination
+                .tabs-content__slider-line
+                .swiper-button-next
+                  include ../../static/images/arrow-right.svg
+          //- End big slider
+
+          //- Begin thumbs slider
+          .tabs-content__thumbs-slider
+            .swiper-container.gallery-thumbs-5.gallery-thumbs-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+                .swiper-slide
+          //- End thumbs slider
       .tabs-content__item#instagram
-        | instagram
+        .tabs-content__item-in
+          //- Begin big slider
+          .tabs-content__big-slider
+            .swiper-container.gallery-top-6.gallery-top-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-2.jpg)")
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+              .tabs-content__slider-controls
+                .swiper-button-prev
+                  include ../../static/images/arrow-left.svg
+                .tabs-content__slider-line
+                .swiper-pagination
+                .tabs-content__slider-line
+                .swiper-button-next
+                  include ../../static/images/arrow-right.svg
+          //- End big slider
+
+          //- Begin thumbs slider
+          .tabs-content__thumbs-slider
+            .swiper-container.gallery-thumbs-6.gallery-thumbs-each
+              .swiper-wrapper
+                .swiper-slide(style="background-image:url(./static/images/home-gallery/slide-3.jpg)")
+                .swiper-slide
+          //- End thumbs slider
     //- END TABS CONTENT
