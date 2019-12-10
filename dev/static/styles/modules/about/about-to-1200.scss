@@ -1,9 +1,5 @@
 .about {
-  &__img-wr {
-    flex-basis: 60%;
-  }
-
-  &__content {
-    flex-basis: 40%;
+  &:before, &:after {
+    height: 40px;
   }
 }

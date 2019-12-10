@@ -7,6 +7,9 @@
 @import "page-options/page-options.scss";
 @import "why/why.scss";
 @import "about/about.scss";
+@import "scroll-nav/scroll-nav.scss";
+@import "home-menu/home-menu.scss";
+@import "card/card.scss";
 
 // BEGIN MEDIA
 // Media
@@ -14,6 +17,8 @@
   @import "container/media/container-to-1200.scss";
   @import "header/header-to-1200.scss";
   @import "about/about-to-1200.scss";
+  @import "scroll-nav/scroll-nav-to-1200.scss";
+  @import "home-menu/home-menu-to-1200.scss";
 }
 
 // END MEDIA

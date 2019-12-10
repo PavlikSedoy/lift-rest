@@ -1,0 +1,86 @@
+section.home-menu
+  .home-menu__bg-img
+
+  .scroll-nav.scroll-nav__section
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-top.svg
+    span.scroll-nav__line
+    .scroll-nav__icon
+      include ../../static/images/scroll-logo.svg
+      span.scroll-nav__prev 2
+      span.scroll-nav__current 3
+      span.scroll-nav__next 4
+    span.scroll-nav__line
+    a.scroll-nav__link(href="#top")
+      include ../../static/images/arrow-bottom.svg
+
+  .container
+    .section-heading.home-menu__heading
+      h2.dark-text Меню
+    //- BEGIN CONTENT
+    .home-menu__content.white-bg
+      //- BEGIN ARTICLE
+      article.home-menu__card-wr
+        //- BEGIN ARTICLE CONTENT
+        .card.home-menu__card
+          h3.card__title Парма
+          .card__text.home-menu__card-text
+            p соус вершковий,<br>пармезан, сир<br>моцарела, прошуто, рукола
+          .card__btn-wr.home-menu__card-btn-wr
+            a.btn.btn__border_animation.btn__color_transparent.btn__text_green(href="/") детальніше <span class="btn-top-border"></span>
+        //- END ARTICLE CONTENT
+        
+        //- BEGIN ARTICLE IMAGE
+        .home-menu__card-image-wr
+          img(src="./static/images/home-menu/item-1.jpg", alt="ALT")
+        //- END ARTICLE IMAGE
+      //- END ARTICLE
+
+      //- BEGIN ARTICLE
+      article.home-menu__card-wr
+        //- BEGIN ARTICLE CONTENT
+        .card.home-menu__card
+          h3.card__title Кальцоне аль Форно
+          .card__text.home-menu__card-text
+            p соус томатний,<br>пармезан, сир<br>моцарела, сир рікота,<br>шинка, помідори
+          .card__btn-wr.home-menu__card-btn-wr
+            a.btn.btn__border_animation.btn__color_transparent.btn__text_green(href="/") детальніше <span class="btn-top-border"></span>
+        //- END ARTICLE CONTENT
+        
+        //- BEGIN ARTICLE IMAGE
+        .home-menu__card-image-wr
+          img(src="./static/images/home-menu/item-2.jpg", alt="ALT")
+        //- END ARTICLE IMAGE
+      //- END ARTICLE
+
+      //- BEGIN ARTICLE
+      article.home-menu__card-wr
+        //- BEGIN ARTICLE IMAGE
+        .home-menu__card-image-wr
+          img(src="./static/images/home-menu/item-3.jpg", alt="ALT")
+        //- END ARTICLE IMAGE
+
+        //- BEGIN ARTICLE CONTENT
+        .card.home-menu__card
+          h3.card__title Карбонара
+          .card__text.home-menu__card-text
+            p спагетті, бекон,<br>оливкова олія,<br>пармезон, часник, яйця,<br>перець молотий
+          .card__btn-wr.home-menu__card-btn-wr
+            a.btn.btn__border_animation.btn__color_transparent.btn__text_green(href="/") детальніше <span class="btn-top-border"></span>
+        //- END ARTICLE CONTENT
+      //- END ARTICLE
+
+      //- BEGIN ARTICLE
+      article.home-menu__card-wr
+        //- BEGIN ARTICLE IMAGE
+        .home-menu__card-image-wr
+          img(src="./static/images/home-menu/item-4.jpg", alt="ALT")
+        //- END ARTICLE IMAGE
+
+        //- BEGIN ARTICLE CONTENT
+        .home-menu__card
+          .home-menu__more.green-bg
+            a.btn.btn__border_animation.btn__color_transparent(href="/") дивитись все меню <span class="btn-top-border"></span>
+        //- END ARTICLE CONTENT
+      //- END ARTICLE
+    //- END CONTENT

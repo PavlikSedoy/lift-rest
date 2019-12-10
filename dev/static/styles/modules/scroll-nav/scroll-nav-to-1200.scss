@@ -1,0 +1,17 @@
+.scroll-nav {
+  &__icon {
+    width: 60px;
+
+    svg {
+      height: 40px;
+    }
+  }
+
+  &__section {
+    left: 50px;
+  }
+
+  &__prev, &__current, &__next {
+    font-size: 14px;
+  }
+}
