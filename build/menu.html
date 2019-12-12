@@ -111,21 +111,11 @@
         </div>
       </header>
       <main>
-        <aside class="menu-aside menu-page__aside" id="home-menu">
+        <faside class="menu-aside menu-page__aside" id="home-menu">
           <nav class="menu-aside__wr">
-            <select class="menu-aside__mobile" id="menuNav">
-              <option>ХОЛОДНІ ТА ГАРЯЧІ ЗАКУСКИ</option>
-              <option>САЛАТИ</option>
-              <option>ПЕРШІ СТРАВИ</option>
-              <option>ІТАЛІЙСЬКА ПАСТА</option>
-              <option>ГАРНІРИ</option>
-              <option>ОСНОВНІ СТРАВИ</option>
-              <option>СТРАВИ ДЛЯ КОМПАНІЇ</option>
-              <option>ДЕСЕРТИ</option>
-              <option>кава/чай</option>
-              <option>алкогольні напої</option>
-              <option>безалкогольні напої</option>
-            </select>
+            <div class="menu-aside__mobile hamburger" id="menuNav"><span></span>
+              <p>Меню</p>
+            </div>
             <ul class="menu-aside__list">
               <li class="menu-aside__item"><a class="menu-aside__link" href="/"><svg width="70" height="57" viewBox="0 0 70 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3209 42.3111H49.6538V3.78518H20.3209V42.3111ZM53.4408 42.3111V2.97292C53.4408 1.33405 52.1067 0 50.466 0H19.5104C17.8716 0 16.5357 1.33405 16.5357 2.97292V42.3111H1.62273C0.726195 42.3111 0 43.0373 0 43.9321C0 44.8286 0.726195 45.5548 1.62273 45.5548H68.3555C69.2503 45.5548 69.9765 44.8286 69.9765 43.9321C69.9765 43.0373 69.2503 42.3111 68.3555 42.3111H53.4408ZM23.2508 53.7563C22.3542 53.7563 21.628 54.4807 21.628 55.3773C21.628 56.272 22.3542 57 23.2508 57H46.9516C47.8482 57 48.5743 56.272 48.5743 55.3773C48.5743 54.4807 47.8482 53.7563 46.9516 53.7563H23.2508ZM11.1744 49.6556C11.1744 48.759 11.9006 48.0328 12.7954 48.0328H57.4967C58.3914 48.0328 59.1176 48.759 59.1176 49.6556C59.1176 50.5521 58.3914 51.2783 57.4967 51.2783H12.7954C11.9006 51.2783 11.1744 50.5521 11.1744 49.6556Z" fill="#83BE42"/>
@@ -184,7 +174,7 @@
 <span>безалкогольні <br>напої</span></a></li>
             </ul>
           </nav>
-        </aside>
+        </faside>
         <section class="menu menu-page__content">
           <article class="menu-item menu__item">
             <div class="menu-item__container">
@@ -311,9 +301,32 @@
           </div>
         </div>
       </div>
+      <div class="mobile-nav" id="mobileMenu">
+        <div class="mobile-nav__close" id="mobileNavClose2"><img src="./static/images/close.png" alt="Close mobile nav"></div>
+        <div class="container">
+          <div class="nav__controls-wr mobile">
+            <nav class="nav__nav">
+              <ul>
+                <li><a href="/">ХОЛОДНІ ТА ГАРЯЧІ ЗАКУСКИ</a></li>
+                <li><a href="/">САЛАТИ</a></li>
+                <li><a href="/">ПЕРШІ СТРАВИ</a></li>
+                <li><a href="/">ІТАЛІЙСЬКА ПАСТА</a></li>
+                <li><a href="/">ГАРНІРИ</a></li>
+                <li><a href="/">ОСНОВНІ СТРАВИ</a></li>
+                <li><a href="/">СТРАВИ ДЛЯ КОМПАНІЇ</a></li>
+                <li><a href="/">ДЕСЕРТИ</a></li>
+                <li><a href="/">кава/чай</a></li>
+                <li><a href="/">алкогольні напої</a></li>
+                <li><a href="/">безалкогольні напої</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.js"></script>
     <script src="static/js/main.js"></script>
   </body>
 </html>

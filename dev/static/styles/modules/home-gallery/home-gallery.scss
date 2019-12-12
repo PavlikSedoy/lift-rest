@@ -81,9 +81,17 @@
 }
 // END TABS
 
+.fixed {
+  position:fixed; /*позицианируем чтобы исчез скролл*/
+  width:100%; /*что бы верстка не складывалась по ширине*/
+}
+
 // BEGIN TABS CONTENT
 .tabs-content {
   color: $white;
+  height: 640px;
+  position: relative;
+  overflow: hidden;
 
   &__item {
     display: none;
@@ -166,10 +174,11 @@
   }
 
   &__slider-controls {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // transform: translateY(-60px);
+    width: calc(70% - 15px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
   // End big slider
 
@@ -195,3 +204,63 @@
   // End thumb slider
 }
 // END TABS CONTENT
+
+// Begin tabs switcher
+.tabs-switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__slider-line {
+    height: 1px;
+    flex-basis: 30%;
+    background-color: $white;
+  }
+
+  &__prev, &__next {
+    svg path {
+      opacity: 1;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__count {
+    border-radius: 50%;
+    border: 1px solid rgba($white, .35);
+    height: 72px;
+    width: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    canvas {
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      top: -2px;
+      left: -2px;
+      position: absolute;
+    }
+  }
+
+  &__current-number {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  &__summ-number {
+    font-size: 12px;
+  }
+
+  .pie_progress__svg {
+    position: absolute;
+    width: calc(100% + 2.5px);
+    height: calc(100% + 2.5px);
+    top: -1px;
+    left: -1px;
+  }
+}
+// End tabs switcher

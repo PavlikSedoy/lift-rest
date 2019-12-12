@@ -35,6 +35,10 @@
           box-shadow: 0px 2px 8px $green;
         }
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 

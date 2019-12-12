@@ -1,5 +1,6 @@
 .menu-item {
   margin-top: 60px;
+  overflow: visible;
 
   &:before {
     top: -20px;
@@ -44,6 +45,22 @@
 }
 
 .menu-aside {
+  &__mobile.hamburger {
+    display: flex;
+    position: relative;
+
+    p {
+      position: absolute;
+      left: calc(100% + 5px);
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $green;
+      font-size: 20px;
+    }
+  }
+
   &__list {
     display: none;
   }

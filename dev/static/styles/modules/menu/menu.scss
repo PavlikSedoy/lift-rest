@@ -46,6 +46,7 @@
 .menu-item {
   position: relative;
   margin-top: 25px;
+  overflow: hidden;
 
   &:before {
     @include pseudo;
@@ -115,8 +116,12 @@
 .menu-aside {
   padding-top: 150px;
 
-  &__mobile {
+  &__mobile.hamburger {
     display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__list {
