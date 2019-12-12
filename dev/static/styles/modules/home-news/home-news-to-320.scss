@@ -1,0 +1,27 @@
+.home-news {
+  &__item {
+    flex-wrap: wrap;
+
+    &>div {
+      &:first-child {
+        flex-basis: 100%;
+      }
+
+      &:last-child {
+        flex-basis: 100%;
+      }
+    }
+
+    &:last-child {
+      &>div {
+        &:first-child {
+          order: 2;
+        }
+  
+        &:last-child {
+          order: 1;
+        }
+      }
+    }
+  }
+}

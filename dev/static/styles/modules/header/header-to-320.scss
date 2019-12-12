@@ -1,0 +1,62 @@
+.header {
+  &__big-logo_container {
+    &> svg {
+      width: 200px;
+    }
+  }
+  
+  &__working-time {
+    font-size: 12px;
+
+    li {
+      margin-top: 5px;
+    }
+  }
+
+  &__abc {
+    right: 15px;
+
+    svg {
+      width: 40px;
+    }
+  }
+
+  &__working-time {
+    margin-right: 15px;
+  }
+
+  &__nav {
+    width: calc(100% - 30px);
+  }
+
+  &__btn-wr {
+    width: 245px;
+    height: 45px;
+  }
+
+  &__social-wr {
+    width: 100%;
+
+    ul {
+      margin-right: 15px;
+      margin-left: 15px;
+      justify-content: space-between;
+    }
+
+    a {
+      font-size: 13px;
+    }
+
+    li {
+      margin-left: 20px;
+    }
+  }
+
+  &__social-row {
+    margin-top: 23vh;
+  }
+
+  &__scroll-down {
+    height: 28vh;
+  }
+}

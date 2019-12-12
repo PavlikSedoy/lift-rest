@@ -379,12 +379,17 @@ $(document).ready(function () {
         spaceBetween: 60,
         // loop:true,
         // loopedSlides: 5, //looped slides should be the same
-        slidesPerView: 2,
+        slidesPerView: 1,
         // centeredSlides: true,
         // slidesPerView: 'auto',
         navigation: {
             nextEl: '.swiper-button-next1',
             prevEl: '.swiper-button-prev1',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 2,
+            }
         },
         // thumbs: {
         //     swiper: reviewsThumb,
@@ -399,4 +404,26 @@ $(document).ready(function () {
         }
     });
     // END HOME REVIEWS SLIDER
+
+    // Begin smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    // End smooth scroll
+
+    // Open mobile nav
+    $('#hamburger').click( function () {
+        $('#mobileNav').fadeIn();
+    });
+
+    // Close mobile nav
+    $('#mobileNavClose').click( function () {
+        $('#mobileNav').fadeOut();
+    });
 });

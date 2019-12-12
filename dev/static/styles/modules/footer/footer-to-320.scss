@@ -1,0 +1,31 @@
+.footer {
+  &__content {
+    padding-top: 20px;
+  }
+
+  &__content-row {
+    flex-wrap: wrap;
+  }
+
+  &__content-col {
+    flex-basis: 100%;
+
+    &:first-child, &:nth-child(2), &:last-child {
+      flex-basis: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  &__copyright-row {
+    flex-wrap: wrap;
+
+    &>div {
+      flex-basis: 100%;
+      text-align: center;
+
+      &:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.home-reviews {
+  &__controls {
+    top: -69px;
+  }
+
+  &__reviews-slider {
+    article {
+      flex-wrap: wrap;
+      height: auto;
+
+      &>div {
+        flex-basis: 100%;
+        height: auto;
+        
+        &:first-child {
+          order: 2;
+        }
+
+        &:last-child {
+          order: 1;
+          height: 230px;
+        }
+      }
+    }
+  }
+
+  &__card {
+    padding: 40px 20px 40px;
+  }
+
+  &__pagination-slider {
+    display: none;
+  }
+
+  &__controls {
+    display: none;
+  }
+}

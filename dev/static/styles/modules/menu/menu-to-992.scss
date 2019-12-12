@@ -1,0 +1,53 @@
+.menu-item {
+  &:before {
+    top: 10px;
+  }
+
+  &:after {
+    bottom: 10px;
+  }
+
+  &__img-wr {
+    position: relative;
+
+    &:before {
+      @include pseudo;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      background: $gray-bg;
+      z-index: 1;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__container {
+    max-width: 600px;
+  }
+
+  &__title {
+    font-size: 20px;
+    height: 80px;
+  }
+}
+
+.menu-page {
+  &__aside {
+    flex-basis: 300px;
+  }
+
+  &__content {
+    flex-basis: calc(100% - 300px);
+  }
+}
+
+.menu-aside {
+  &__list {
+    margin-left: 80px;
+  }
+}

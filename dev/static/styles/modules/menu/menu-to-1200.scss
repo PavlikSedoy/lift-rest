@@ -1,0 +1,49 @@
+// Begin position menu and content
+.menu-page {
+  &__aside {
+    flex-basis: 350px;
+  }
+
+  &__content {
+    flex-basis: calc(100% - 350px);
+  }
+}
+// End position menu and content
+
+// Begin aside
+.menu-aside {
+  &__list {
+    margin-left: 120px;
+  }
+}
+// End aside
+
+// Begin menu item
+.menu-item {
+  &:before {
+    top: 20px;
+    background-position: 50% 0;
+  }
+
+  &:after {
+    bottom: 20px;
+    background-position: 50% 0;
+  }
+
+  &__container {
+    margin-left: 20px;
+    max-width: 720px;
+  }
+
+  &__img-wr {
+    img {
+      height: 350px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    height: 100px;
+  }
+}
+// End menu item

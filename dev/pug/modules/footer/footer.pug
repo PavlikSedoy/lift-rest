@@ -1,1 +1,75 @@
-footer.footer
+footer.footer#footer
+  .container.footer__container
+    //- Begin map
+    .footer__map
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.492945153476!2d30.46366535152111!3d50.487782679379784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdecae7a9e33%3A0x657c3bc4f9a01ab6!2z0YPQuy4g0KDRi9C70LXQtdCy0LAsIDcsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1576012190897!5m2!1sru!2sua" width="330" height="300", frameborder="0", style="border:0;",allowfullscreen="")
+    //- End map
+
+    //- Begin footer content
+    .footer__content
+      .row.footer__content-row
+        .footer__content-col
+          h3.footer__content-title Контакти
+          .footer__content-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+        .footer__content-col
+          h3.footer__content-title Контакти
+          ul
+            li
+              a(href="tel://08003004545") 0800 300 45 45
+            li
+              a(href="tel://08003004545") 0800 300 45 45
+            li
+              a(href="mailto://liftrest@gmail.com") liftrest@gmail.com
+        .footer__content-col
+          h3.footer__content-title Соціальні мережі
+          ul
+            li
+              a(href="/")
+                include ../../../static/images/instagram.svg
+                span instagram
+            li
+              a(href="/")
+                include ../../../static/images/facebook.svg
+                span facebook
+      .row.footer__copyright-row
+        .footer__copyright
+          include ../../../static/images/copyright.svg
+          span 2019. Всі права захищені
+        .footer__web-studio
+          | Developed by UniversalWeb
+    //- End footer content
+//- Mobile Nav
+.mobile-nav#mobileNav
+  .mobile-nav__close#mobileNavClose
+    img(src="./static/images/close.png", alt="Close mobile nav")
+  .container
+    //- BEGIN NAVIGATION AND LANGUAGE SWITCHER
+    .nav__controls-wr.mobile
+      //- begin navigation
+      nav.nav__nav
+        ul
+          li
+            a(href="/") Головна
+          li
+            a(href="/") ГАЛЕРЕЯ
+          li
+            a(href="/") послуги
+          li
+            a(href="/") МЕНЮ
+          li
+            a(href="/") Відгуки
+          li
+            a(href="/") Новини та Акції
+          li
+            a(href="/") Контакти
+      //- end navigation
+
+      //- begin language switcher
+      .nav__lng-swtch.lng-swtch
+        button.lng-swtch__btn.btn.btn__size_100.btn__color_green#lngSwtch(type="button")
+          span#currentLng.lng-swtch__current UK
+          #lngSwtchHidden.lng-swtch__hidden
+            ul
+              li RU
+      //- end language switcher
+    //- END NAVIGATION AND LANGUAGE SWITCHER

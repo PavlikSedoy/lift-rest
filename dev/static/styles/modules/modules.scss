@@ -14,6 +14,7 @@
 @import "home-news/home-news.scss";
 @import "home-gallery/home-gallery.scss";
 @import "home-reviews/home-reviews.scss";
+@import "menu/menu.scss";
 
 // BEGIN MEDIA
 // Media
@@ -24,6 +25,41 @@
   @import "scroll-nav/scroll-nav-to-1200.scss";
   @import "home-menu/home-menu-to-1200.scss";
   @import "home-news/home-new-to-1200.scss";
+  @import "menu/menu-to-1200.scss";
+}
+
+@media screen and (max-width: 1199px) {
+  @import "header/header-to-992.scss";
+  @import "footer/footer-to-992.scss";
+  @import "container/media/container-to-992.scss";
+  @import "about/about-to-992.scss";
+  @import "home-menu/home-menu-to-992.scss";
+  @import "home-gallery/home-gallery-to-992.scss";
+  @import "menu/menu-to-992.scss";
+}
+
+@media screen and (max-width: 991px) {
+  @import "header/header-to-768.scss";
+  @import "why/why-to-768.scss";
+  @import "menu/menu-to-768.scss";
+}
+
+@media screen and (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 22px;
+  }
+
+  @import "container/media/container-to-320.scss";
+  @import "header/header-to-320.scss";
+  @import "why/why-to-320.scss";
+  @import "about/about-to-320.scss";
+  @import "home-menu/home-menu-to-320.scss";
+  @import "home-news/home-news-to-320.scss";
+  @import "home-gallery/home-gallery-to-320.scss";
+  @import "lift-rest/lift-rest-to-320.scss";
+  @import "home-reviews/home-reviews-to-320.scss";
+  @import "footer/footer-to-320.scss";
+  @import "menu/menu-to-320.scss";
 }
 
 // END MEDIA

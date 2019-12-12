@@ -1,0 +1,174 @@
+// Begin position menu and content
+.menu-page {
+  main {
+    display: flex;
+    overflow: hidden;
+
+    .home-reviews__scroll-down.top {
+      svg path {
+        fill: $green;
+      }
+
+      .scroll-down__line {
+        background-color: $green;
+      }
+
+      &:hover {
+        svg path {
+          fill: $white;
+        }
+
+        .scroll-down__line {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  &__aside {
+    flex-basis: 550px;
+  }
+
+  &__content {
+    flex-basis: calc(100% - 550px);
+  }
+}
+// End position menu and content
+
+// Begin content
+.menu {
+  padding-top: 70px;
+  padding-bottom: 185px;
+}
+// End content
+
+// Begin menu item
+.menu-item {
+  position: relative;
+  margin-top: 25px;
+
+  &:before {
+    @include pseudo;
+    top: 80px;
+    right: 0;
+    width: 120%;
+    height: 200px;
+    background-image: url('../images/menu-page/item-bg-top.png');
+    background-size: cover;
+  }
+
+  &:after {
+    @include pseudo;
+    bottom: 80px;
+    right: 0;
+    width: 120%;
+    height: 200px;
+    background-image: url('../images/menu-page/item-bg-bottom.png');
+    background-size: cover;
+    z-index: 1;
+    background-position: bottom;
+  }
+
+  &__container {
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  &__img-wr {
+    img {
+      height: 530px;
+    }
+  }
+
+  &__content {
+    text-align: right;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: $white;
+    letter-spacing: 2px;
+    transition: .3s ease;
+    display: block;
+    height: 130px;
+  }
+
+  &:hover {
+    .menu-item__title {
+      color: $green;
+    }
+  }
+
+  &__desc {
+    color: rgba($white, .55);
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+// End menu item
+
+// Begin aside
+.menu-aside {
+  padding-top: 150px;
+
+  &__mobile {
+    display: none;
+  }
+
+  &__list {
+    margin-left: 160px;
+  }
+
+  &__item {
+    margin: 27px 0;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $green;
+
+    &:before {
+      @include pseudo;
+      left: -165px;
+      width: 95px;
+      height: 1px;
+      background-color: $green;
+      top: 50%;
+      transform: translate(-100px, -50%);
+      opacity: 0;
+      transition: .5s ease-in-out;
+    }
+
+    svg {
+      position: absolute;
+      left: -70px;
+      top: 50%;
+      transform: translate(-100px, -50%);
+      width: 50px;
+      opacity: 0;
+      transition: .3s ease .2s;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+        transform: translate(0, -50%);
+      }
+
+      svg {
+        opacity: 1;
+        transform: translate(0, -50%);
+        transition: .3s ease;
+      }
+    }
+  }
+}
+// End aside

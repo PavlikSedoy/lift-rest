@@ -1,0 +1,17 @@
+.home-menu {
+  &__card-wr {
+    flex-basis: 100%;
+
+    &:nth-child(2), &:nth-child(3) {
+      &>div {
+        &:first-child {
+          order: 2;
+        }
+
+        &:last-child {
+          order: 1;
+        }
+      }
+    }
+  }
+}

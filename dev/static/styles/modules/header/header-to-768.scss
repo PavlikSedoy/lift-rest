@@ -1,0 +1,40 @@
+.header {
+  &__big-logo_container {
+    &> svg {
+      height: 10vh;
+    }
+  } 
+
+  &__abc {
+    svg {
+      width: 60px;
+    }
+  }
+
+  &__btn-wr {
+    width: 265px;
+    height: 55px;
+  }
+
+  &__scroll-down {
+    height: 18vh;
+  }
+
+  &__social-wr ul {
+    margin-right: 45px;
+  }
+
+  &__working-time {
+    margin-right: 45px;
+  }
+}
+
+.scroll-nav {
+  display: none;
+}
+
+.scroll-down {
+  svg {
+    height: 35px;
+  }
+}

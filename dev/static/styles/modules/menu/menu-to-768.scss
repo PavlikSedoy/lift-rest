@@ -1,0 +1,46 @@
+.menu-page {
+  main {
+    flex-wrap: wrap;
+  }
+
+  &__aside {
+    flex-basis: 100%;
+  }
+
+  &__content {
+    flex-basis: 100%;
+  }
+}
+
+.menu-aside {
+  padding-top: 50px;
+
+  &__list {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 10px;
+  }
+
+  &__link {
+    text-align: center;
+    font-size: 12px;
+
+    br {
+      display: none;
+    }
+
+    svg {
+      display: none;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+}

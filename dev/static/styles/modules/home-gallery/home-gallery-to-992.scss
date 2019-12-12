@@ -1,0 +1,43 @@
+.home-gallery {
+  &__tabs-content {
+    margin-top: 20px;
+  }
+}
+
+.gallery-tabs {
+  flex-wrap: wrap;
+  border: none;
+
+  &__item {
+    flex-basis: calc( 100% / 3);
+
+    &:first-child, &:nth-child(2), &:nth-child(3) {
+      border-top: 1px solid $green;
+      padding: 20px 0 10px;
+    }
+
+    &:last-child, &:nth-child(4), &:nth-child(5) {
+      border-bottom: 1px solid $green;
+      padding: 10px 0 20px;
+
+      &:before {
+        top: auto;
+        bottom: -4.5px;
+      }
+    }
+  }
+}
+
+.tabs-content {
+  &__big-slider {
+    flex-basis: 100%;
+
+    .swiper-slide {
+      height: 330px;
+    } 
+  }
+
+  &__thumbs-slider {
+    display: none;
+  }
+}

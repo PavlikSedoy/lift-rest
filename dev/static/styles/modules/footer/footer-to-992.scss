@@ -1,0 +1,21 @@
+.nav {
+  &__controls-wr {
+    &.mobile {
+      display: flex;
+    }
+  }
+}
+
+.footer {
+  &__container {
+    flex-direction: column;
+  }
+
+  &__map {
+    flex-basis: 100%;
+
+    iframe {
+      width: 100% !important;
+    }
+  }
+}
